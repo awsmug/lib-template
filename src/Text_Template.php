@@ -49,12 +49,17 @@ class Text_Template {
 	/**
 	 * Text_Template constructor.
 	 *
+	 * @param string $content         Text template content.
 	 * @param string $open_delimiter  Delimiter which before the variable.
 	 * @param string $close_delimiter Delimiter which after the variable.
 	 *
 	 * @since 1.0.0
 	 */
-	public function __construct( string $open_delimiter = '{', string $close_delimiter = '}' ) {
+	public function __construct( string $content = '', string $open_delimiter = '{', string $close_delimiter = '}' ) {
+		if ( ! empty( $content ) ) {
+			$this->set_content( $content );
+		}
+		
 		$this->open_delimiter  = $open_delimiter;
 		$this->close_delimiter = $close_delimiter;
 	}
