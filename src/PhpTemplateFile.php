@@ -33,7 +33,7 @@ class PhpTemplateFile extends Template {
 	 * 
 	 * @since 1.0.0
 	 */
-	public static function init( PhpFile $file, array $variables ) : PhpTemplateFile {
-		return new self( $file, $variables );
+	public static function init( PhpFile $file, array $variables, array $php_variables = [] ) : PhpTemplateFile {
+		return new self( $file, $variables, $php_variables );
 	}
 }

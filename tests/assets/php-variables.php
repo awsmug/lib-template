@@ -1,3 +1,3 @@
 <?php
 
-echo sprintf( 'Hello %s!', $variables['name'] );
+echo sprintf( 'Hello %s {name}!', $variables['salutation'] );
