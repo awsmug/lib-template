@@ -5,7 +5,7 @@
     "license": "GPL-2.0-or-later",
     "autoload": {
         "psr-4": {
-            "AWSM\\Lib_Text_Template\\" : "src/"
+            "AWSM\\LibTextTemplate\\" : "src/"
         }
     },
     "require-dev": {
