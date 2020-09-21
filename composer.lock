@@ -4,8 +4,40 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c4a61f844435f92ca12d4c145dfe50a",
-    "packages": [],
+    "content-hash": "cd485bfc731c006a3edad3d505f5c35a",
+    "packages": [
+        {
+            "name": "awsm/lib-file",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/awsmug/lib-file.git",
+                "reference": "8d3470a7e02413b621d9a9691bd3852326fed726"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/awsmug/lib-file/zipball/8d3470a7e02413b621d9a9691bd3852326fed726",
+                "reference": "8d3470a7e02413b621d9a9691bd3852326fed726",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/php-code-coverage": "^8.0",
+                "phpunit/phpunit": "^9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AWSM\\LibFile\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Awesome file functionality.",
+            "time": "2020-09-21T15:11:41+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
@@ -1801,7 +1833,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "awsm/lib-file": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
