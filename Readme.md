@@ -57,7 +57,7 @@ Content in Template.php:
 echo 'Hello {name}!'
 ```
 
-Content in Template.php:
+Use of PhpTemplateFile class:
 
 ```php
 
@@ -80,7 +80,7 @@ Content in Template.php:
 <?php endforeach; ?>
 ```
 
-Content in Template.php:
+Use of PhpTemplateFile class:
 
 ```php
 
