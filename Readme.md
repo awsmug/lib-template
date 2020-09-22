@@ -63,7 +63,7 @@ Use of PhpTemplateFile class:
 
 $template_file = 'template.php';
 
-$file = PhpFile::set( template_file );
+$file = PhpFile::set( $template_file );
 
 $values = ['name' => 'John'] ;
 
@@ -86,7 +86,7 @@ Use of PhpTemplateFile class:
 
 $template_file = 'template.php';
 
-$file = PhpFile::set( template_file );
+$file = PhpFile::set( $template_file );
 
 $values = ['content' => 'This is my content'] ;
 
