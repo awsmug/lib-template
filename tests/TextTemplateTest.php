@@ -10,14 +10,14 @@ final class TextTemplateTest extends TestCase {
 	public function testContent(): void {
 		$content = 'Hello {name}!';
 
-		$content = TextTemplate::init( $content, ['name' => 'John'] )->render();
+		$content = TextTemplate::use( $content, ['name' => 'John'] )->render();
 		$this->assertEquals( 'Hello John!', $content );
 	}
 
 	public function testDelimiter(): void {
 		$content = 'Hello [name]!';
 
-		$content = TextTemplate::init( $content, ['name' => 'John'] )->setDelimiters('[', ']')->render();
+		$content = TextTemplate::use( $content, ['name' => 'John'] )->setDelimiters('[', ']')->render();
 		$this->assertEquals( 'Hello John!', $content );
 	}
 }

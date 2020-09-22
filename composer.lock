@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/awsmug/lib-file.git",
-                "reference": "49b10e42f02c3bb6db0148776455b933eeb3ae5e"
+                "reference": "c91062412408195570227446957e298570856486"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awsmug/lib-file/zipball/49b10e42f02c3bb6db0148776455b933eeb3ae5e",
-                "reference": "49b10e42f02c3bb6db0148776455b933eeb3ae5e",
+                "url": "https://api.github.com/repos/awsmug/lib-file/zipball/c91062412408195570227446957e298570856486",
+                "reference": "c91062412408195570227446957e298570856486",
                 "shasum": ""
             },
             "require-dev": {
@@ -35,7 +35,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Awesome file functionality.",
-            "time": "2020-09-21T15:33:18+00:00"
+            "time": "2020-09-22T11:08:51+00:00"
         }
     ],
     "packages-dev": [

@@ -33,7 +33,7 @@ class TextTemplate extends Template {
 	 * 
 	 * @since 1.0.0
 	 */
-	public static function init( string $content, array $variables ) : Template {
+	public static function use( string $content, array $variables ) : Template {
 		return new self( $content, $variables );
 	}
 }

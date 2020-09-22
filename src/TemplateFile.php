@@ -33,7 +33,7 @@ class TemplateFile extends Template {
 	 * 
 	 * @since 1.0.0
 	 */
-	public static function init( File $file, array $variables ) : TemplateFile {
+	public static function use( File $file, array $variables ) : TemplateFile {
 		return new self( $file, $variables );
 	}
 }

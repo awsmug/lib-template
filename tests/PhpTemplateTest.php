@@ -10,14 +10,14 @@ use AWSM\LibTemplate\Template;
 final class PhpTemplateTest extends TestCase {
 
 	public function testVariable(): void {
-        $file = PhpFile::set( dirname(__FILE__) . '/assets/php-template.php' );
-		$content = PhpTemplateFile::init( $file, ['name' => 'John'] )->render();
+        $file = dirname(__FILE__) . '/assets/php-template.php';
+		$content = PhpTemplateFile::use( $file, ['name' => 'John'] )->render();
 		$this->assertEquals( 'Hello John!', $content );
 	}
 
 	public function testPhpVariable(): void {
-        $file = PhpFile::set( dirname(__FILE__) . '/assets/php-variables.php' );
-		$content = PhpTemplateFile::init( $file, ['name' => 'John'], ['salutation' => 'Mr'] )->render();
+        $file = dirname(__FILE__) . '/assets/php-variables.php';
+		$content = PhpTemplateFile::use( $file, ['name' => 'John'], ['salutation' => 'Mr'] )->render();
 		$this->assertEquals( 'Hello Mr John!', $content );
 	}
 }

@@ -63,11 +63,9 @@ Use of PhpTemplateFile class:
 
 $template_file = 'template.php';
 
-$file = PhpFile::set( $template_file );
-
 $values = ['name' => 'John'] ;
 
-$content =  PhpTemplateFile::init( $file, $values )->render();
+$content =  PhpTemplateFile::init( $template_file, $values )->render();
 ```
 
 #### Variant with PHP variables
@@ -86,13 +84,11 @@ Use of PhpTemplateFile class:
 
 $template_file = 'template.php';
 
-$file = PhpFile::set( $template_file );
-
 $values = ['content' => 'This is my content'] ;
 
 $variables = [ 'count' => 5 ];
 
-$content =  PhpTemplateFile::init( $file, $values, $variables )->render();
+$content =  PhpTemplateFile::init( $template_file, $values, $variables )->render();
 ```
 
 ### Setting delemiters

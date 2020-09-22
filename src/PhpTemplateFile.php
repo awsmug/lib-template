@@ -13,13 +13,13 @@ class PhpTemplateFile extends Template {
     /**
 	 * TemplateFile constructor.
 	 *
-	 * @param File   $file Template file.
+	 * @param string   $file Template file.
 	 * @param array  $variables Variables for template.
 	 *
 	 * @since 1.0.0
 	 */
-	private function __construct( PhpFile $file, array $variables, array $php_variables = [] ) {
-		$this->content   = $file->runAndBufferOutput( $php_variables );
+	private function __construct( string $file, array $variables, array $php_variables = [] ) {
+		$this->content = PhpFile::use( $file )->runAndBufferOutput( $php_variables );
 		$this->variables = $variables;
 	}
 
@@ -33,7 +33,7 @@ class PhpTemplateFile extends Template {
 	 * 
 	 * @since 1.0.0
 	 */
-	public static function init( PhpFile $file, array $variables, array $php_variables = [] ) : PhpTemplateFile {
+	public static function use( string $file, array $variables, array $php_variables = [] ) : PhpTemplateFile {
 		return new self( $file, $variables, $php_variables );
 	}
 }
